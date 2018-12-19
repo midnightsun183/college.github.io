@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<!-- Import JS -->
+	<script src="vendor/js/jquery-1.11.3.min.js"></script>
+		<!-- Run JS -->
+ 	<body onload="generateInsult()"> 
+		<!-- Run JS -->
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());	
+ 		 gtag('config', 'UA-112036925-1');
+	</script>
+		
+		<!-- Import CSS Styles -->
+	<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+		<!-- Declare language -->
+	<html lang="en-US">
+		
+		
+		
+<!-- To Do 
+	1. Google Analytics
+	2. SEO
+	3. Aspie of the week
+	4. Stock Picker
+		4a. onclick <aref= new page_stockPick		
+		4b. Make Stock picker 3 letters work 
+		4c. on click <aref= newpage_paymefucker
+		4d. on page reload fuck uppayme
+	5. Option picker
+	6. <iframes> Daily Discussion
+			-->
+	
+<style>
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;		
+		width:100%;
+		height: 300px;
+		min-height: 300px;
+		max-height: 300px;
+	
+}
+.headerimg{
+	background-image: url("https://b.thumbs.redditmedia.com/oy9VnYHOrajBhnOrazUEyYexY5YkQxXxEh9Tg82wWEs.png");
+    	/*background-repeat:no-repeat;*/	
+		width:auto;
+		height: auto;
+}
+	
+.bgSizeContain {
+  background-image: url("https://b.thumbs.redditmedia.com/oy9VnYHOrajBhnOrazUEyYexY5YkQxXxEh9Tg82wWEs.png");
+  background-size: 160;
+  width: 160px;
+  height: 160px;
+  border: 2px solid;
+  color: grey;
+  resize: both;
+  overflow: scroll;
+}
+	
+.header h1 {
+    font-size: 50px;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+	
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+    background-color: grey;
+    padding: 20px;
+    margin-top: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+	position: fixed;
+    bottom: 0;
+    height: 30px;
+	width 100%;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+	
+	#wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+.banner-img {
+    width: 100%;
+}
+	
+</style>
+		
+</head>
+		
+<body>
+<!--Header-->
+	
+<div id="banner">
+    <div id="wrapper" style="width:100%; overflow:hidden;">
+        <div id="container" style="width:100%; margin-right:auto;">
+                <A HREF="http://www.google.com"><img style="width: 100%;" src="https://b.thumbs.redditmedia.com/oy9VnYHOrajBhnOrazUEyYexY5YkQxXxEh9Tg82wWEs.png" alt="Wall Street Bets PRO!"/>
+        </div>
+    </div>
+</div>
+	
+
+<!-- Navigation Bar-->
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<!-- End Navigation Bar-->
+<div class="row">
+<--Start Left Column-->
+	
+<div class="leftcolumn">
+    <div class="card">	
+<!--JS DYNAMIC "FUCKER!" Button -->
+	<center>
+	    <section class="fucking shit content">
+				<div class="fucking shit insult" id="insult">
+					<h1 class="bitch ass">Snatch Waffle</h1>
+				</div>
+				<div class="fucking shit description">
+					<p><span class="mothafuckin meta">Noun, derogatory:</span>
+						<span class="mothafuckin sentence">
+							She was being a real <span class="ass">snatch waffle </span> at the store today."
+						</span>
+					</p>
+				</div>
+				<div class="fucking shit">
+					<button class="damn button" id="demo">New Fucking Investment Tip</button>
+				</div>
+				<div class="fucking shares">
+					<p class="mothafuckin">Like what you see? Share this shit: </p>
+					<a class="fa fa-twitter twitter-share-button" href="https://twitter.com/intent/tweet?url=http://www.fuckinginsultgenerator.com/&text=Hello%20world" target="_blank">
+					</a>
+					<br>
+					<p class="mothafuckin">Facebook lurker? Post it: </p>
+					<a class="fa fa-facebook facebook-share-button" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmidnightsun183.github.io%2FWSB.github.io%2F&amp;src=sdkpreparse">
+					</a>
+				</div>
+			</section>
+<script>
+function randomString() {
+    var chars = "ABCDEFGHIJKLMNOPQRSTUVWXTZ";
+    var string_length = 3;
+    var randomstring = '';
+    for (var i=0; i<string_length; i++) {
+        var rnum = Math.floor(Math.random() * chars.length);
+        randomstring += chars.substring(rnum,rnum+1);
+    }
+    
+ //   document.randform.randomfield.value ="Buy some " + "$" + randomstring + " Faggies D's";
+		document.getElementById('demo').innerHTML = "Buy some " + "$" + randomstring + " Faggies D's";
+ 
+}
+</script> 
+
+<!--End JS DYNAMIC "FUCKER!" Button -->
+	</center>
+			<script src="js/min/insult-min.js"></script>
+	</div>	
+	
+	</div>
+	</div>
+	</div>
+		</div>
+	
+
+<div class="leftcolumn">
+  		<div class="card">	
+		    <h3><b>Daily Discussion</b></h3>
+    		 	 <h5><p id="date"></p>
+			<script>
+				document.getElementById("date").innerHTML = Date();
+			</script>
+			</h5>    
+	  		<div id="container" style="width:100%; margin-right:auto;">
+                		<A HREF="https://www.reddit.com/r/wallstreetbets/comments/9uw0xd/wsb_cited_as_a_reason_to_stay_away_from_rh_weve/"><img style="width: 100%;" src="https://preview.redd.it/7kvmhrm53uw11.jpg?width=640&crop=smart&auto=webp&s=3962e67644107d2d0b82efb82f0d37ef0fda88c7"/>
+      	 		 </div>
+     			 <p>Some text..</p> 
+		 </div>
+	</div>
+ </div>
+
+	<!-- This method of embed ifram works, just not with github-->
+	<!--
+		<iframe id="inlineFrameExample"
+		width=auto
+		height=auto
+		src="https://www.reddit.com/r/wallstreetbets/comments/92blq7/daily_discussion_thread_july_27_2018/">
+		</iframe>
+	-->
+	
+<!-- End left Column-->
+<div class="row">	
+<!-- Start Right Column -->
+		
+
+  <div class="rightcolumn">
+    <div class="card">    
+      <h2>Aspie of The Day</h2>
+      	<div class="fakeimg" style="height:100px;">Image
+	</div>
+      	<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+</div>
+<!--End Card-->	  
+
+<div class="card">
+      <h3>Popular Post</h3>
+    	  <div id="banner">
+    		<div id="wrapper" style="width:100%; overflow:hidden;">
+     		   <div id="container" style="width:100%; margin-right:auto;">
+                	<A HREF="http://www.google.com">
+				<img style="width: 100%;" src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2018/02/mall-page-01-2018.gif" alt="Bloomberg for tards">
+				</a>
+        	</div>
+	    </div>
+	</div>
+   </div>
+<!--End Card-->	    
+	  
+<div class="card">
+      <h3>Popular Post</h3>
+    	  <div id="banner">
+    		<div id="wrapper" style="width:100%; overflow:hidden;">
+     		   <div id="container" style="width:100%; margin-right:auto;">
+                	<A HREF="http://www.google.com">
+				<img style="width: 100%;" src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/2018/02/mall-page-01-2018.gif" alt="Bloomberg for tards">
+				</a>
+        	</div>
+	    </div>
+	</div>
+   </div>
+<!--End Card-->	   
+
+<!--Footer-->
+<div class="footer">
+	<footer class="fucking shit footer">
+		<center>
+ 		 <h2>Copyright &copy; 2017 by <a href="http://facebook.com/5dollarinsults">$5 Dollar Insults</a></h2>
+		</center>
+</div>
+	
+</body>
+</html>
